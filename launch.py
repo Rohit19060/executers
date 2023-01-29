@@ -5,7 +5,7 @@ from datetime import date
 
 def work(workSpace="Default"):
     close = False
-    path = "D:\\Projects\\"
+    path = "E:\\"
     try:
         if (workSpace != "Default"):
             y = workSpace.lower()+".code-workspace"
