@@ -6,13 +6,14 @@ from datetime import date
 def work(workSpace="Default"):
     close = False
     path = "D:\\Projects\\"
+    files = os.listdir(path)
+    files = [i for i in files if i.endswith(".code-workspace")]
     try:
         if (workSpace != "Default"):
-            y = workSpace.lower()+".code-workspace"
+            y = [i for i in files if i.lower(
+            ).startswith(workSpace.lower())][0]
         else:
             x = 1
-            files = os.listdir(path)
-            files = [i for i in files if i.endswith(".code-workspace")]
             for i in files:
                 print(f'{x}: {i}')
                 x = x+1
@@ -24,7 +25,7 @@ def work(workSpace="Default"):
             if (y.isdigit()):
                 y = files[int(y) - 1]
             else:
-                y = y.lower()+".code-workspace"
+                y = [i for i in files if i.lower().startswith(y.lower())][0]
         os.startfile(path+y)
     except:
         work()
