@@ -2,4 +2,4 @@
 
 cd /d %~dp0
 
-python launch.py "Work" "flutter"
+w freelancing_flutter

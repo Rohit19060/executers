@@ -7,6 +7,7 @@ IF "%1"=="flutter" (
 IF "%1"=="flutterupdate" (
    flutter pub upgrade --major-versions
    flutter pub upgrade --tighten
+   flutter analyze
 )
 IF "%1"=="php" (
     composer install
