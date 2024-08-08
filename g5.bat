@@ -2,4 +2,4 @@
 
 cd /d %~dp0
 
-w sveltekit
+w project_initiator

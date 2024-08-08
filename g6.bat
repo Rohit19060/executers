@@ -2,4 +2,4 @@
 
 cd /d %~dp0
 
-w go
+w tech_book

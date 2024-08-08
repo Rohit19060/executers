@@ -54,5 +54,5 @@ elif (sys.argv[1] == "Space"):
     input("Press Enter to Exit..")
 
 elif (sys.argv[1] == "Notes"):
-    os.chdir("D:\\Notes")
+    os.chdir("D:\\Projects\\developer-utilities")
     os.system("code .")
